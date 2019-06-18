@@ -112,7 +112,7 @@
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
         						<v-avatar size="180" color="grey lighten-4">
-        							<img alt="avatar">
+                       <img alt="avatar">
         						</v-avatar>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
@@ -139,9 +139,9 @@
         <v-flex xs12 sm4 class="my-3">
           <v-card class="elevation-0 transparent">
             <v-card-text class="text-xs-center">
-              <v-avatar size="300" color="grey lighten-4">
-                <img alt="avatar">
-              </v-avatar>
+              <v-card color="grey lighten-4">
+                <img height=400 width=400 :src="require('./assets/teamfoto.jpeg')">
+              </v-card>
             </v-card-text>
           </v-card>
         </v-flex>
