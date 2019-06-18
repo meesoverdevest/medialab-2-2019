@@ -128,6 +128,26 @@
           </v-flex>
         </v-layout>
       </section>
+
+      <section>
+      <v-layout column wrap class="my-5" align-center>
+        <v-flex xs12 sm4 class="my-3">
+          <div class="text-xs-center">
+            <h2 class="headline">Team Foto</h2>
+          </div>
+        </v-flex>
+        <v-flex xs12 sm4 class="my-3">
+          <v-card class="elevation-0 transparent">
+            <v-card-text class="text-xs-center">
+              <v-avatar size="300" color="grey lighten-4">
+                <img alt="avatar">
+              </v-avatar>
+            </v-card-text>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </section>
+
      <!--  <section>
         <v-layout column wrap class="my-5" align-center>
           <v-flex xs12 sm4 class="my-3">
