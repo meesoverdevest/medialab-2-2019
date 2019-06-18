@@ -202,10 +202,10 @@
             <v-flex xs12 sm4>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout">
-                  <div class="headline">Over A.S.O.</div>
+                  <div class="headline">Over A20</div>
                 </v-card-title>
                 <v-card-text>
-                  Wij van de Aerospace Safety Organization zijn een fusie tussen de opleidingen CMD en CMGT. Met de onderzoekende kwaliteiten van Yordi en Dario krijgt de techniek de beste fundering. Alle ontwerpbeslissingen zijn gebaseerd uitvoerig onderzoek, hierdoor onderscheidt EcoWatch zich van alle anderen!
+                  Wij van A20 houden van de A20, omdat je daar 130 km/u mag rijden.
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -237,7 +237,7 @@
                       <v-icon class="green--text text--lighten-1">email</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                      <v-list-tile-title>contact@aso.com</v-list-tile-title>
+                      <v-list-tile-title>contact@a20.com</v-list-tile-title>
                     </v-list-tile-content>
                   </v-list-tile>
                 </v-list>
