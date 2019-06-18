@@ -170,7 +170,7 @@
 
                 <v-flex xs12 md6>
                   <v-card-text primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">Prototypes</div>
+                      <div class="headline text-xs-center">Presentaties</div>
                   </v-card-text>
                   <v-card-text>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nisl quis ipsum bibendum, vitae molestie libero maximus. Mauris congue tellus a nisl pharetra vulputate. Suspendisse feugiat elit eget efficitur tincidunt. Mauris congue, nibh et condimentum facilisis, purus ante fringilla ipsum, a malesuada eros sapien in ipsum. Nam elementum sodales magna sed maximus. Curabitur commodo condimentum diam, sed condimentum leo interdum et. Morbi scelerisque diam maximus, hendrerit libero eu, tincidunt justo. Maecenas blandit lorem non libero varius, eu ullamcorper dui viverra. Donec in diam vitae mauris volutpat pharetra eu et velit. Morbi ultrices sapien ut metus volutpat, ac hendrerit turpis sollicitudin. Ut in magna sed mauris gravida porttitor.</p>
@@ -179,7 +179,16 @@
 
                 <v-flex xs12 md6>
                   <v-card-text primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Persoonlijke Verslagen</div>
+                      <div class="headline text-xs-center">Individueel development-ontwikkeldocument</div>
+                  </v-card-text>
+                  <v-card-text>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nisl quis ipsum bibendum, vitae molestie libero maximus. Mauris congue tellus a nisl pharetra vulputate. Suspendisse feugiat elit eget efficitur tincidunt. Mauris congue, nibh et condimentum facilisis, purus ante fringilla ipsum, a malesuada eros sapien in ipsum. Nam elementum sodales magna sed maximus. Curabitur commodo condimentum diam, sed condimentum leo interdum et. Morbi scelerisque diam maximus, hendrerit libero eu, tincidunt justo. Maecenas blandit lorem non libero varius, eu ullamcorper dui viverra. Donec in diam vitae mauris volutpat pharetra eu et velit. Morbi ultrices sapien ut metus volutpat, ac hendrerit turpis sollicitudin. Ut in magna sed mauris gravida porttitor.</p>
+                  </v-card-text>
+                </v-flex>
+
+                <v-flex xs12 md6>
+                  <v-card-text primary-title class="layout justify-center">
+                    <div class="headline text-xs-center">Prototypes</div>
                   </v-card-text>
                   <v-card-text>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nisl quis ipsum bibendum, vitae molestie libero maximus. Mauris congue tellus a nisl pharetra vulputate. Suspendisse feugiat elit eget efficitur tincidunt. Mauris congue, nibh et condimentum facilisis, purus ante fringilla ipsum, a malesuada eros sapien in ipsum. Nam elementum sodales magna sed maximus. Curabitur commodo condimentum diam, sed condimentum leo interdum et. Morbi scelerisque diam maximus, hendrerit libero eu, tincidunt justo. Maecenas blandit lorem non libero varius, eu ullamcorper dui viverra. Donec in diam vitae mauris volutpat pharetra eu et velit. Morbi ultrices sapien ut metus volutpat, ac hendrerit turpis sollicitudin. Ut in magna sed mauris gravida porttitor.</p>
@@ -193,7 +202,11 @@
                   <v-card-text class="layout justify-center">
                     <a href="https://github.com/meesoverdevest/medialab-2-2019" target="_blank"><img width=200 height=200 :src="require('./assets/github.png')"></a>
                   </v-card-text>
+                  <v-card-text primary-title class="layout justify-center">
+                      <i>Klik op de photo hierboven om naar onze <br> Github repositorie verwezen te worden</i>
+                  </v-card-text>
                 </v-flex>
+
 
               </v-layout>
             </v-container>
