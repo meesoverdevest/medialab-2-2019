@@ -105,6 +105,9 @@
                     <v-card-text>
                       Verhaal
                     </v-card-text>
+                    <v-card-text>
+                      <p></p>
+                    </v-card-text>
                   </v-card>
                 </v-flex>
 
@@ -112,7 +115,7 @@
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
         						<v-avatar size="180" color="grey lighten-4">
-                       <img alt="avatar">
+                       <img :src="require('./assets/cphoto.jpg')">
         						</v-avatar>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
@@ -121,7 +124,11 @@
                     <v-card-text>
                         Verhaal
                     </v-card-text>
+                    <v-card-text>
+                      <p>Inmiddels ben ik 3e jaars student op de Hogeschool Rotterdam. Tijdens mijn studie heb ik aan meerdere groepsprojecten gewerkt waar hardware en software gebruikt werd om diverse problemen op te kunnen lossen. Ieder project werd iteratief uitgewerkt om in een korte tijd veel verbetering te realiseren in het ontwikkel process.</p>
+                    </v-card-text>
                   </v-card>
+
                 </v-flex>
               </v-layout>
             </v-container>
