@@ -105,6 +105,9 @@
                     <v-card-text>
                       Verhaal
                     </v-card-text>
+                    <v-card-text>
+                      <p></p>
+                    </v-card-text>
                   </v-card>
                 </v-flex>
 
@@ -112,7 +115,7 @@
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
         						<v-avatar size="180" color="grey lighten-4">
-                       <img alt="avatar">
+                       <img :src="require('./assets/cphoto.jpg')">
         						</v-avatar>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
@@ -121,7 +124,11 @@
                     <v-card-text>
                         Verhaal
                     </v-card-text>
+                    <v-card-text>
+                      <p>Inmiddels ben ik 3e jaars student op de Hogeschool Rotterdam. Tijdens mijn studie heb ik aan meerdere groepsprojecten gewerkt waar hardware en software gebruikt werd om diverse problemen op te kunnen lossen. Ieder project werd iteratief uitgewerkt om in een korte tijd veel verbetering te realiseren in het ontwikkel process.</p>
+                    </v-card-text>
                   </v-card>
+
                 </v-flex>
               </v-layout>
             </v-container>
@@ -146,6 +153,67 @@
           </v-card>
         </v-flex>
       </v-layout>
+    </section>
+
+    <section>
+      <v-layout column wrap class="my-5" align-center>
+        <v-flex xs12 sm4 class="my-3">
+          <div class="text-xs-center">
+              <h2 class="headline">Bewijzen en Deliverables</h2>
+            </div>
+          </v-flex>
+
+
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+
+                <v-flex xs12 md6>
+                  <v-card-text primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">Presentaties</div>
+                  </v-card-text>
+                  <v-card-text>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nisl quis ipsum bibendum, vitae molestie libero maximus. Mauris congue tellus a nisl pharetra vulputate. Suspendisse feugiat elit eget efficitur tincidunt. Mauris congue, nibh et condimentum facilisis, purus ante fringilla ipsum, a malesuada eros sapien in ipsum. Nam elementum sodales magna sed maximus. Curabitur commodo condimentum diam, sed condimentum leo interdum et. Morbi scelerisque diam maximus, hendrerit libero eu, tincidunt justo. Maecenas blandit lorem non libero varius, eu ullamcorper dui viverra. Donec in diam vitae mauris volutpat pharetra eu et velit. Morbi ultrices sapien ut metus volutpat, ac hendrerit turpis sollicitudin. Ut in magna sed mauris gravida porttitor.</p>
+                  </v-card-text>
+                </v-flex>
+
+                <v-flex xs12 md6>
+                  <v-card-text primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">Individueel development-ontwikkeldocument</div>
+                  </v-card-text>
+                  <v-card-text>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nisl quis ipsum bibendum, vitae molestie libero maximus. Mauris congue tellus a nisl pharetra vulputate. Suspendisse feugiat elit eget efficitur tincidunt. Mauris congue, nibh et condimentum facilisis, purus ante fringilla ipsum, a malesuada eros sapien in ipsum. Nam elementum sodales magna sed maximus. Curabitur commodo condimentum diam, sed condimentum leo interdum et. Morbi scelerisque diam maximus, hendrerit libero eu, tincidunt justo. Maecenas blandit lorem non libero varius, eu ullamcorper dui viverra. Donec in diam vitae mauris volutpat pharetra eu et velit. Morbi ultrices sapien ut metus volutpat, ac hendrerit turpis sollicitudin. Ut in magna sed mauris gravida porttitor.</p>
+                  </v-card-text>
+                </v-flex>
+
+                <v-flex xs12 md6>
+                  <v-card-text primary-title class="layout justify-center">
+                    <div class="headline text-xs-center">Prototypes</div>
+                  </v-card-text>
+                  <v-card-text>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nisl quis ipsum bibendum, vitae molestie libero maximus. Mauris congue tellus a nisl pharetra vulputate. Suspendisse feugiat elit eget efficitur tincidunt. Mauris congue, nibh et condimentum facilisis, purus ante fringilla ipsum, a malesuada eros sapien in ipsum. Nam elementum sodales magna sed maximus. Curabitur commodo condimentum diam, sed condimentum leo interdum et. Morbi scelerisque diam maximus, hendrerit libero eu, tincidunt justo. Maecenas blandit lorem non libero varius, eu ullamcorper dui viverra. Donec in diam vitae mauris volutpat pharetra eu et velit. Morbi ultrices sapien ut metus volutpat, ac hendrerit turpis sollicitudin. Ut in magna sed mauris gravida porttitor.</p>
+                  </v-card-text>
+                </v-flex>
+
+                <v-flex xs12 md6>
+                  <v-card-text primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">Github</div>
+                  </v-card-text>
+                  <v-card-text class="layout justify-center">
+                    <a href="https://github.com/meesoverdevest/medialab-2-2019" target="_blank"><img width=200 height=200 :src="require('./assets/github.png')"></a>
+                  </v-card-text>
+                  <v-card-text primary-title class="layout justify-center">
+                      <i>Klik op de photo hierboven om naar onze <br> Github repositorie verwezen te worden</i>
+                  </v-card-text>
+                </v-flex>
+
+
+              </v-layout>
+            </v-container>
+          </v-flex>
+        
+          
+        </v-layout>
     </section>
 
      <!--  <section>
