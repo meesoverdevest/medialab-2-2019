@@ -90,13 +90,19 @@
                 <pano title="The Title" width="720" height="480" bundle="assets/imgbox/" format="jpg"></pano>
 
                 <v-card-actions>
+                  <h3 class="headline mb-0">Agent: {{ i }}</h3>
+                  <v-spacer></v-spacer>
+                  <v-icon>arrow_left</v-icon>
+                  <v-icon>arrow_right</v-icon>
+                  <v-icon>mic_off</v-icon>
+                  <v-icon>mic</v-icon>
                   <v-spacer></v-spacer>
                   <v-btn
                     color="primary"
                     flat
                     @click="dialog = false"
                   >
-                    I accept
+                    Close
                   </v-btn>
                 </v-card-actions>
               </v-card>

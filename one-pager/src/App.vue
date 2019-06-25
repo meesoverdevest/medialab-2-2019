@@ -39,7 +39,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="green--text text--lighten-1">data_usage</v-icon>
+                      <v-icon x-large class="green--text text--lighten-1">streetview</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Altijd in contact met hulpdiensten</div>
@@ -52,7 +52,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="green--text text--lighten-1">satellite</v-icon>
+                      <v-icon x-large class="green--text text--lighten-1">view_comfy</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Een overzicht voor de hulpdiensten</div>
@@ -65,7 +65,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="green--text text--lighten-1">build</v-icon>
+                      <v-icon x-large class="green--text text--lighten-1">commute</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Ingrijpen voor het mis gaat</div>
@@ -173,7 +173,24 @@
                       <div class="headline text-xs-center">Presentaties</div>
                   </v-card-text>
                   <v-card-text>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nisl quis ipsum bibendum, vitae molestie libero maximus. Mauris congue tellus a nisl pharetra vulputate. Suspendisse feugiat elit eget efficitur tincidunt. Mauris congue, nibh et condimentum facilisis, purus ante fringilla ipsum, a malesuada eros sapien in ipsum. Nam elementum sodales magna sed maximus. Curabitur commodo condimentum diam, sed condimentum leo interdum et. Morbi scelerisque diam maximus, hendrerit libero eu, tincidunt justo. Maecenas blandit lorem non libero varius, eu ullamcorper dui viverra. Donec in diam vitae mauris volutpat pharetra eu et velit. Morbi ultrices sapien ut metus volutpat, ac hendrerit turpis sollicitudin. Ut in magna sed mauris gravida porttitor.</p>
+                    <v-btn 
+                      class="green lighten-1 mt-5 layout justify center"
+                      dark
+                      large
+                      href="https://docs.google.com/presentation/d/1XZE1PhEHmJ-rtWfxk3zGrPAYWSMApvC_Ufu5pQhISJ8/edit?usp=sharing"
+                      target="_blank"
+                    >
+                      Tussen Presentatie
+                    </v-btn>
+                    <v-btn 
+                      class="green lighten-1 mt-5 layout justify center"
+                      dark
+                      large
+                      href="https://docs.google.com/presentation/d/1XZE1PhEHmJ-rtWfxk3zGrPAYWSMApvC_Ufu5pQhISJ8/edit?usp=sharing"
+                      target="_blank"
+                    >
+                      Eind Presentatie
+                    </v-btn>
                   </v-card-text>
                 </v-flex>
 
@@ -181,17 +198,62 @@
                   <v-card-text primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Individueel development-ontwikkeldocument</div>
                   </v-card-text>
-                  <v-card-text>
+                  <v-btn 
+                      class="green lighten-1 mt-5 layout justify center"
+                      dark
+                      large
+                      href="https://docs.google.com/presentation/d/1XZE1PhEHmJ-rtWfxk3zGrPAYWSMApvC_Ufu5pQhISJ8/edit?usp=sharing"
+                      target="_blank"
+                    >
+                      Mees
+                    </v-btn>
+                    <v-btn 
+                      class="green lighten-1 mt-5 layout justify center"
+                      dark
+                      large
+                      href="https://docs.google.com/presentation/d/1XZE1PhEHmJ-rtWfxk3zGrPAYWSMApvC_Ufu5pQhISJ8/edit?usp=sharing"
+                      target="_blank"
+                    >
+                      Carlo
+                    </v-btn>
+                  <!-- <v-card-text>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nisl quis ipsum bibendum, vitae molestie libero maximus. Mauris congue tellus a nisl pharetra vulputate. Suspendisse feugiat elit eget efficitur tincidunt. Mauris congue, nibh et condimentum facilisis, purus ante fringilla ipsum, a malesuada eros sapien in ipsum. Nam elementum sodales magna sed maximus. Curabitur commodo condimentum diam, sed condimentum leo interdum et. Morbi scelerisque diam maximus, hendrerit libero eu, tincidunt justo. Maecenas blandit lorem non libero varius, eu ullamcorper dui viverra. Donec in diam vitae mauris volutpat pharetra eu et velit. Morbi ultrices sapien ut metus volutpat, ac hendrerit turpis sollicitudin. Ut in magna sed mauris gravida porttitor.</p>
-                  </v-card-text>
+                  </v-card-text> -->
                 </v-flex>
 
                 <v-flex xs12 md6>
                   <v-card-text primary-title class="layout justify-center">
                     <div class="headline text-xs-center">Prototypes</div>
                   </v-card-text>
+                  <v-btn 
+                      class="green lighten-1 mt-5 layout justify center"
+                      dark
+                      large
+                      href="https://docs.google.com/document/d/1Dw3DYW0Gf0fcrLYL_faSzgIRvwZ1UMF4XlLa2Rjns2A/edit?usp=sharing"
+                      target="_blank"
+                  >
+                  Opzet Concept en Expert Interview
+                </v-btn>
+                  <v-btn 
+                      class="green lighten-1 mt-5 layout justify center"
+                      dark
+                      large
+                      href="https://drive.google.com/drive/folders/1gaL4HRJwfyrQ7PA2NCeY5YbMBl_FLy0D?usp=sharing"
+                      target="_blank"
+                  >
+                  Wireframes
+                </v-btn>
+                <v-btn 
+                      class="green lighten-1 mt-5 layout justify center"
+                      dark
+                      large
+                      href="https://docs.google.com/document/d/1PIJCGE70KY3oX5JJ1SNo4bGf_M_9HFoyRbDf8lWIZWE/edit?usp=sharing"
+                      target="_blank"
+                  >
+                  StoryBoard
+                </v-btn>
                   <v-card-text>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nisl quis ipsum bibendum, vitae molestie libero maximus. Mauris congue tellus a nisl pharetra vulputate. Suspendisse feugiat elit eget efficitur tincidunt. Mauris congue, nibh et condimentum facilisis, purus ante fringilla ipsum, a malesuada eros sapien in ipsum. Nam elementum sodales magna sed maximus. Curabitur commodo condimentum diam, sed condimentum leo interdum et. Morbi scelerisque diam maximus, hendrerit libero eu, tincidunt justo. Maecenas blandit lorem non libero varius, eu ullamcorper dui viverra. Donec in diam vitae mauris volutpat pharetra eu et velit. Morbi ultrices sapien ut metus volutpat, ac hendrerit turpis sollicitudin. Ut in magna sed mauris gravida porttitor.</p>
+                    
                   </v-card-text>
                 </v-flex>
 
