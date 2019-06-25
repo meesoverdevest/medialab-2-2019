@@ -57,49 +57,37 @@
     <v-content>
       <v-container grid-list-md text-xs-center>
         <v-layout row wrap>
-          <v-flex v-for="i in 9" :key="`4${i}`" xs4>
+          <v-flex v-for="agent in agents" :key="agent.id" xs4>
             <v-card>
               <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-                aspect-ratio="2.75"
+                :src="agent.avatar"
+                aspect-ratio="2"
               ></v-img>
               
 
               <v-card-title primary-title>
                 <div>
-                  <h3 class="headline mb-0">Agent: {{ i }}</h3>
+                  <h3 class="headline mb-0">Agent: {{ agent.name }}</h3>
                 </div>
               </v-card-title>
 
               <v-card-actions>
+                <v-btn color="orange" @click="openDialog(agent)">Open</v-btn>
                 <v-icon>arrow_left</v-icon>
                 <v-icon>arrow_right</v-icon>
-                <v-icon>mic_off</v-icon>
-                <v-icon>mic</v-icon>
-                <v-btn flat color="orange" @click="dialog = true">Open</v-btn>
+                <v-icon @click="toggle_mic(agent)" v-if="!agent.mic_on">mic_off</v-icon>
+                <v-icon @click="toggle_mic(agent)" v-else>mic_on</v-icon>
               </v-card-actions>
             </v-card>
           </v-flex>
           <v-flex md6>
-            <v-dialog
+            <v-dialog 
+              v-if="dialogAgent !== null"
               v-model="dialog"
-              width="750"
-              height="550"
+              width="720"
             >
-              <v-card>
-                <pano title="The Title" width="720" height="480" bundle="assets/imgbox/" format="jpg"></pano>
-
-                <v-card-actions>
-                  <v-spacer></v-spacer>
-                  <v-btn
-                    color="primary"
-                    flat
-                    @click="dialog = false"
-                  >
-                    I accept
-                  </v-btn>
-                </v-card-actions>
-              </v-card>
+              <pano :title="`Agent ${dialogAgent.name} in ${dialogAgent.city}, ${dialogAgent.street}`" width="720" height="480" :bundle="`assets/${dialogAgent.id}/`" format="jpg"></pano> 
+              <v-btn color="orange lighten-1" @click="closeDialog">Close {{ dialogAgent.name }}</v-btn>
             </v-dialog>
           </v-flex>
         </v-layout>
@@ -144,6 +132,7 @@
 </template>
 
 <script>
+  import faker from 'faker';
   import Pano from 'vue-pano';
 
   export default {
@@ -155,7 +144,37 @@
       right: false,
       left: false,
       source: "https://github.com/meesoverdevest/medialab-2-2019",
-      dialog: false
-    })
+      dialog: false,
+      agents: [],
+      dialogAgent: null
+    }),
+    mounted() {
+      this.createAgents();
+    },
+    methods: {
+      openDialog(agent) {
+        this.dialogAgent = agent;
+        this.dialog = true;
+      },
+      closeDialog() {
+        this.dialogAgent = null;
+        this.dialog = false;
+      },
+      createAgents() {
+        for (var i = 0; i < 6; i++) {
+          this.agents.push({
+            id: i+1,
+            name: faker.name.findName(),
+            city: faker.address.city(),
+            street: faker.address.streetName(),
+            avatar: faker.image.avatar(300,140,"people"),
+            mic_on: false
+          });
+        }
+      },
+      toggle_mic(agent) {
+        this.agents.find(a => a.id === agent.id).mic_on = agent.mic_on === false ? true : false;
+      }
+    }
   }
 </script>
