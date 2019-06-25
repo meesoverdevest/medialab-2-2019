@@ -55,7 +55,56 @@
       <v-icon large>verified_user</v-icon>
     </v-navigation-drawer>
     <v-content>
-      <v-container fluid fill-height>
+      <v-container grid-list-md text-xs-center>
+        <v-layout row wrap>
+          <v-flex v-for="i in 9" :key="`4${i}`" xs4>
+            <v-card>
+              <v-img
+                src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+                aspect-ratio="2.75"
+              ></v-img>
+              
+
+              <v-card-title primary-title>
+                <div>
+                  <h3 class="headline mb-0">Agent: {{ i }}</h3>
+                </div>
+              </v-card-title>
+
+              <v-card-actions>
+                <v-icon>arrow_left</v-icon>
+                <v-icon>arrow_right</v-icon>
+                <v-icon>mic_off</v-icon>
+                <v-icon>mic</v-icon>
+                <v-btn flat color="orange" @click="dialog = true">Open</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+          <v-flex md6>
+            <v-dialog
+              v-model="dialog"
+              width="750"
+              height="550"
+            >
+              <v-card>
+                <pano title="The Title" width="720" height="480" bundle="assets/imgbox/" format="jpg"></pano>
+
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn
+                    color="primary"
+                    flat
+                    @click="dialog = false"
+                  >
+                    I accept
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-dialog>
+          </v-flex>
+        </v-layout>
+      </v-container>
+      <!-- <v-container fluid fill-height>
         <v-layout justify-center align-center>
           <v-flex shrink>
             <v-tooltip right>
@@ -76,7 +125,7 @@
             </v-tooltip>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
     </v-content>
     <v-navigation-drawer
       v-model="right"
@@ -95,14 +144,18 @@
 </template>
 
 <script>
+  import Pano from 'vue-pano';
+
   export default {
     name: 'App',
+    components: { Pano },
     data: () => ({
       drawer: false,
       drawerRight: false,
       right: false,
       left: false,
-      source: "https://github.com/meesoverdevest/medialab-2-2019"
+      source: "https://github.com/meesoverdevest/medialab-2-2019",
+      dialog: false
     })
   }
 </script>
