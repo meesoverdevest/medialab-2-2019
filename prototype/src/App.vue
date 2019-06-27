@@ -58,7 +58,7 @@
       <v-container grid-list-md text-xs-center>
         <v-layout row wrap>
           <v-flex v-for="agent in agents" :key="agent.id" xs4>
-            <v-card>
+            <v-card :color="agent.has_emergency ? 'red' : null">
               <v-img
                 :src="agent.avatar"
                 aspect-ratio="2"
@@ -86,7 +86,36 @@
               v-model="dialog"
               width="720"
             >
-              <pano :title="`Agent ${dialogAgent.name} in ${dialogAgent.city}, ${dialogAgent.street}`" width="720" height="480" :bundle="`assets/${dialogAgent.id}/`" format="jpg"></pano> 
+              <v-tabs
+                color="orange"
+                dark
+                slider-color="yellow"
+              >
+                <v-tab
+                  key="panorama"
+                  ripple
+                >
+                  Video
+                </v-tab>
+                <v-tab
+                  key="location"
+                  ripple
+                >
+                  Locatie
+                </v-tab>
+                <v-tab-item
+                  key="panorama"
+                >
+                  <pano :title="`Agent ${dialogAgent.name} in ${dialogAgent.city}, ${dialogAgent.street}`" width="720" height="480" :bundle="`assets/${dialogAgent.id}/`" format="jpg"></pano> 
+                </v-tab-item>
+                <v-tab-item
+                  key="location"
+                >
+                  <v-card flat>
+                    <v-card-text>Locatie: {{ dialogAgent.city }}, {{ dialogAgent.street }}</v-card-text>
+                  </v-card>
+                </v-tab-item>
+              </v-tabs>
               <v-btn color="orange lighten-1" @click="closeDialog">Close {{ dialogAgent.name }}</v-btn>
             </v-dialog>
           </v-flex>
@@ -150,6 +179,9 @@
     }),
     mounted() {
       this.createAgents();
+
+      let self = this;
+      setTimeout(function(){ self.setEmergency() }, 10000);
     },
     methods: {
       openDialog(agent) {
@@ -160,6 +192,9 @@
         this.dialogAgent = null;
         this.dialog = false;
       },
+      setEmergency() {
+        this.agents.find(a => a.id === 4).has_emergency = true;
+      },
       createAgents() {
         for (var i = 0; i < 6; i++) {
           this.agents.push({
@@ -168,7 +203,8 @@
             city: faker.address.city(),
             street: faker.address.streetName(),
             avatar: faker.image.avatar(300,140,"people"),
-            mic_on: false
+            mic_on: false,
+            has_emergency: false
           });
         }
       },
