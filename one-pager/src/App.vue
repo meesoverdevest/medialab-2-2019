@@ -247,10 +247,28 @@
                       class="green lighten-1 mt-5 layout justify center"
                       dark
                       large
+                      href="https://drive.google.com/file/d/1gcB0YF4G_Ydxt9Q1A0aShmU0NBtkBkvq/view?usp=sharing"
+                      target="_blank"
+                  >
+                  Action Cam VLC Stream demonstratie video 
+                </v-btn>
+                <v-btn 
+                      class="green lighten-1 mt-5 layout justify center"
+                      dark
+                      large
                       href="https://docs.google.com/document/d/1PIJCGE70KY3oX5JJ1SNo4bGf_M_9HFoyRbDf8lWIZWE/edit?usp=sharing"
                       target="_blank"
                   >
                   StoryBoard
+                </v-btn>
+                <v-btn 
+                      class="green lighten-1 mt-5 layout justify center"
+                      dark
+                      large
+                      href="https://docs.google.com/document/d/1PIJCGE70KY3oX5JJ1SNo4bGf_M_9HFoyRbDf8lWIZWE/edit?usp=sharing"
+                      target="_blank"
+                  >
+                  Obserbird Dashboard
                 </v-btn>
                   <v-card-text>
                     
