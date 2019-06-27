@@ -186,7 +186,7 @@
                       class="green lighten-1 mt-5 layout justify center"
                       dark
                       large
-                      href="https://docs.google.com/presentation/d/1XZE1PhEHmJ-rtWfxk3zGrPAYWSMApvC_Ufu5pQhISJ8/edit?usp=sharing"
+                      href="https://docs.google.com/presentation/d/1Jou5yeyIv64Q4XflLTkRy7llFYMGvphPcqI8MGVZ7Rc/edit?usp=sharing"
                       target="_blank"
                     >
                       Eind Presentatie
