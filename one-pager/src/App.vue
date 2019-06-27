@@ -18,7 +18,7 @@
               class="green lighten-1 mt-5"
               dark
               large
-              href="/pre-made-themes"
+              href="https://a20.biertjesman.nl/"
             >
               Optimaliseer uw surveillance
             </v-btn>
@@ -42,10 +42,10 @@
                       <v-icon x-large class="green--text text--lighten-1">streetview</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Altijd in contact met hulpdiensten</div>
+                      <div class="headline text-xs-center">Beeld en Contact Voor Hulpdiensten</div>
                     </v-card-title>
                     <v-card-text>
-                      Met behulp van de Obserbird is het mogelijk om altijd in contact te staan met de benodigde hulpdiensten.
+                      Met behulp van de Obserbird is het mogelijk voor de hupldiensten om in real-time informatie deelen met andere eenheden in het veld. De Obserbird maakt het mogelijk voor de hulpdiensten in de meldkamer om mee te kijken met de eenheden in het veld. Ook kan er communicatie plaats vinden tussen de Meldkamer en eenheden in het veld. Hiermee willen wij ervoor zorgen om de coördinatie tussen eenheden te stimuliseren zodat er sneller, juist en accuraat gehandeld kan worden.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -55,10 +55,10 @@
                       <v-icon x-large class="green--text text--lighten-1">view_comfy</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Een overzicht voor de hulpdiensten</div>
+                      <div class="headline text-xs-center">Een Overzicht Voor De Meldkamer</div>
                     </v-card-title>
                     <v-card-text>
-                      Overzicht voor de mensen in de meldkamer
+                      Het Obserbird systeem maakt het mogelijk voor de meldkamer om mee te kijken met de veld eenheden die gebruik maken van het product. De eenheden in het veld kunnen naar de Medlkamer singaleren als ze een assistentie vereisen. Hierdoor kan de meldkamer meteen schakelen naar het beeld van de desbetreffende hulpdienst. 
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -71,7 +71,7 @@
                       <div class="headline text-xs-center">Ingrijpen voor het mis gaat</div>
                     </v-card-title>
                     <v-card-text>
-                      Voordat situaties escaleren kunnen de hulpdiensten al inschakelt worden.
+                      Voordat situaties escaleren kunnen de hulpdiensten al inschakelt worden. Als het blijkt dat de desbetreffende hulpdienst versterking nodig heeft van andere colega's dan kan de meldkamer de dichtstbijzijnde eenheden aansturen.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -265,7 +265,7 @@
                       class="green lighten-1 mt-5 layout justify center"
                       dark
                       large
-                      href="https://docs.google.com/document/d/1PIJCGE70KY3oX5JJ1SNo4bGf_M_9HFoyRbDf8lWIZWE/edit?usp=sharing"
+                      href="https://a20.biertjesman.nl/"
                       target="_blank"
                   >
                   Obserbird Dashboard
