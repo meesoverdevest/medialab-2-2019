@@ -55,6 +55,13 @@
       <v-icon large>verified_user</v-icon>
     </v-navigation-drawer>
     <v-content>
+      <v-alert
+        v-model="alert"
+        dismissible
+        type="error"
+      >
+        Agent {{ agents.find(a => a.has_emergency === true) !== undefined ? agents.find(a => a.has_emergency === true).name : false }} is in nood.
+      </v-alert>
       <v-container grid-list-md text-xs-center>
         <v-layout row wrap>
           <v-flex v-for="agent in agents" :key="agent.id" xs4>
@@ -112,7 +119,7 @@
                   key="location"
                 >
                   <v-card flat>
-                    <v-card-text>Locatie: {{ dialogAgent.city }}, {{ dialogAgent.street }}</v-card-text>
+                    <v-card-text>Stad: {{ dialogAgent.city }}, straat: {{ dialogAgent.street }}</v-card-text>
                   </v-card>
                 </v-tab-item>
               </v-tabs>
@@ -175,7 +182,8 @@
       source: "https://github.com/meesoverdevest/medialab-2-2019",
       dialog: false,
       agents: [],
-      dialogAgent: null
+      dialogAgent: null,
+      alert: false
     }),
     mounted() {
       this.createAgents();
@@ -193,7 +201,8 @@
         this.dialog = false;
       },
       setEmergency() {
-        this.agents.find(a => a.id === 4).has_emergency = true;
+        this.agents.find(a => a.id === 1).has_emergency = true;
+        this.alert = true;
       },
       createAgents() {
         for (var i = 0; i < 6; i++) {
