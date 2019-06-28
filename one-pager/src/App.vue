@@ -265,15 +265,6 @@
                       class="green lighten-1 mt-5 layout justify center"
                       dark
                       large
-                      href="https://a20.biertjesman.nl/"
-                      target="_blank"
-                  >
-                  Obserbird One-Pager
-                </v-btn>
-                <v-btn 
-                      class="green lighten-1 mt-5 layout justify center"
-                      dark
-                      large
                       href="https://obserbird.biertjesman.nl/"
                       target="_blank"
                   >
