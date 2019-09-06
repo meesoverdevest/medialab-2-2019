@@ -96,7 +96,7 @@
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
       					  	<v-avatar size="180" color="grey lighten-4">
-      							 <img alt="avatar">
+      							 <img alt="avatar" :src="require('./assets/0.jpeg')">
       						  </v-avatar>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
@@ -106,7 +106,7 @@
                       Verhaal
                     </v-card-text>
                     <v-card-text>
-                      <p></p>
+                      <p>Momenteel ben ik 4e jaars student op de Hogeschool Rotterdam. Ik programmeer veel in mijn vrije tijd en vind het interessant om hiermee te experimenteren.</p>
                     </v-card-text>
                   </v-card>
                 </v-flex>
